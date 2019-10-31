@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\HP\Desktop\DeltaWeb</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Mapiri.Web.dll">
+      <publishTime>10/29/2018 10:09:12</publishTime>
+    </File>
+    <File Include="bin/Mapiri.Web.pdb">
+      <publishTime>10/29/2018 10:09:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/05/2018 22:42:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/05/2018 22:38:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/02/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/05/2018 22:38:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/05/2018 22:42:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/05/2018 22:42:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/05/2018 22:42:40</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Content/dx.android5.light.css">
+      <publishTime>08/13/2018 11:39:56</publishTime>
+    </File>
+    <File Include="Content/dx.carmine.compact.css">
+      <publishTime>08/13/2018 11:39:56</publishTime>
+    </File>
+    <File Include="Content/dx.carmine.css">
+      <publishTime>08/13/2018 11:39:56</publishTime>
+    </File>
+    <File Include="Content/dx.common.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.contrast.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.contrast.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.dark.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.dark.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.darkmoon.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.darkmoon.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.darkviolet.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.darkviolet.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.greenmist.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.greenmist.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.ios7.default.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.light.compact.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.light.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.blue.dark.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.blue.light.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.lime.dark.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.lime.light.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.orange.dark.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.orange.light.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.purple.dark.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.purple.light.css">
+      <publishTime>08/13/2018 11:39:55</publishTime>
+    </File>
+    <File Include="Content/dx.material.teal.dark.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.material.teal.light.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.softblue.compact.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.softblue.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.spa.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.win10.black.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.win10.white.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.win8.black.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/dx.win8.white.css">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-300.ttf">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-300.woff">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-300.woff2">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-400.ttf">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-400.woff">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-400.woff2">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-500.ttf">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-500.woff">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-500.woff2">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-700.ttf">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-700.woff">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/fonts/Roboto-700.woff2">
+      <publishTime>08/13/2018 11:39:54</publishTime>
+    </File>
+    <File Include="Content/icons/dxicons.ttf">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxicons.woff">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxicons.woff2">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsios.ttf">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsios.woff">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsios.woff2">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsmaterial.ttf">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsmaterial.woff">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/icons/dxiconsmaterial.woff2">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/layouts/Desktop/DesktopLayout.css">
+      <publishTime>08/13/2018 11:39:53</publishTime>
+    </File>
+    <File Include="Content/layouts/Desktop/DesktopLayout.html">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Desktop/DesktopLayout.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Empty/EmptyLayout.css">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Empty/EmptyLayout.html">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Empty/EmptyLayout.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Popup/PopupLayout.css">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Popup/PopupLayout.html">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/layouts/Popup/PopupLayout.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Index.html">
+      <publishTime>10/29/2018 10:08:43</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/13/2018 11:42:21</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>08/13/2018 11:42:18</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/cldr.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/cldr/event.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/cldr/supplemental.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/cldr/unresolved.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/devextreme-localization/dx.messages.de.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/devextreme-localization/dx.messages.en.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/devextreme-localization/dx.messages.ja.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/devextreme-localization/dx.messages.ru.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/dx.aspnet.mvc.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/dx.viz-web.debug.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/dx.viz-web.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/dx.viz.debug.js">
+      <publishTime>08/13/2018 11:39:52</publishTime>
+    </File>
+    <File Include="Scripts/dx.viz.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/dx.web.debug.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/dx.web.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>08/13/2018 11:42:17</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>08/13/2018 11:42:16</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>08/13/2018 11:42:16</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>08/13/2018 11:42:15</publishTime>
+    </File>
+    <File Include="Scripts/globalize.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/globalize/currency.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/globalize/date.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/globalize/message.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/globalize/number.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/globalize/plural.js">
+      <publishTime>08/13/2018 11:42:03</publishTime>
+    </File>
+    <File Include="Scripts/globalize/relative-time.js">
+      <publishTime>08/13/2018 11:42:03</publishTime>
+    </File>
+    <File Include="Scripts/globalize/unit.js">
+      <publishTime>08/13/2018 11:42:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>08/13/2018 11:42:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/13/2018 11:42:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/13/2018 11:42:08</publishTime>
+    </File>
+    <File Include="Scripts/jszip.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/jszip.min.js">
+      <publishTime>08/13/2018 11:42:04</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>08/13/2018 11:42:12</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>08/13/2018 11:42:21</publishTime>
+    </File>
+    <File Include="Scripts/respond.matchmedia.addListener.js">
+      <publishTime>08/13/2018 11:42:21</publishTime>
+    </File>
+    <File Include="Scripts/respond.matchmedia.addListener.min.js">
+      <publishTime>08/13/2018 11:42:20</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>08/13/2018 11:42:20</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>08/13/2018 11:42:14</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>08/13/2018 11:42:13</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>08/13/2018 11:42:13</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>08/13/2018 11:42:13</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/africa.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/canada.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/eurasia.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/europe.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/usa.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-data/world.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-utils/dx.vectormaputils.debug.js">
+      <publishTime>08/13/2018 11:39:51</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-utils/dx.vectormaputils.js">
+      <publishTime>08/13/2018 11:39:50</publishTime>
+    </File>
+    <File Include="Scripts/vectormap-utils/dx.vectormaputils.node.js">
+      <publishTime>08/13/2018 11:39:50</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>08/13/2018 11:42:13</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/24/2018 19:59:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

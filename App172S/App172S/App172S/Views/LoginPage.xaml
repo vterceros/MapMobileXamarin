@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="App172S.Views.LoginPage"
+             Title="Login"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             >
+    <ContentPage.Content>
+        <ScrollView BindingContext="{Binding Login}">
+            <StackLayout Padding="5,20,5,5" VerticalOptions="CenterAndExpand">
+                <controls:CircleImage Source="deltacargologo"  Aspect="AspectFit"  HorizontalOptions="Center" VerticalOptions="Center"></controls:CircleImage>
+                <Label Text="Delta Cargo SRL. está transformando la industria de transporte en Bolivia por medio de la Tecnología." ></Label>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Keyboard="Telephone"
+                    Text="{Binding Telefono, Mode=TwoWay}"
+                    Placeholder="Numero de Telefono"
+                    HorizontalTextAlignment="Center"
+                    Margin="10" ></Entry>
+                    <Button Text="Registrar" HorizontalOptions="FillAndExpand" HeightRequest="46"
+                            Command="{Binding LoginComand}" BackgroundColor="Orange"
+                            IsEnabled="{Binding BtnEnabled}"
+                             BorderRadius="10"
+                             FontAttributes="Bold"
+                             TextColor="White"
+                            ></Button>
+                <ActivityIndicator Color="Orange" IsRunning="{Binding ShowPleaseWait}"></ActivityIndicator>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Library.dll.config
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Library.dll
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Library.pdb
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\EntityFramework.dll
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Negocio.Modelo.dll
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Negocio.Modelo.pdb
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\Mapiri.Negocio.Modelo.dll.config
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\EntityFramework.xml
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\obj\Release\Mapiri.Library.csprojAssemblyReference.cache
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\obj\Release\Mapiri.Library.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\obj\Release\Mapiri.Library.csproj.CopyComplete
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\obj\Release\Mapiri.Library.dll
+C:\Users\HP\Documents\MapiriSoft\Framework\Mapiri.Library\obj\Release\Mapiri.Library.pdb

@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Delta Cargo Dashboard</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/dx.common.css" rel="stylesheet" />
+    <link href="Content/dx.light.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jszip.min.js"></script>
+    <script src="Scripts/dx.viz-web.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Dashboard Delta Cargo SRL</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#dashboard">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#viajes">Administración de Viajes</a>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content">
+                    <div id="dashboard" class="tab-pane container active">
+                        <div class="row text-center">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div id="viajes" class="tab-pane container">                        
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <br />
+                                <div id="grdViajes"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        //var urlApi = "http://localhost:40355/";
+        var urlApi = "https://appdeltacagoservicio.azurewebsites.net/";
+        $("#map").css("width", 1200).css("height", $(document).height());
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -17.6779881, lng: -63.1487273 },
+                zoom: 5
+            });
+
+            $.ajax({
+                url: urlApi + "Api/UsuarioViaje/GetMapaActivos",
+                method: "GET",
+
+            }).done(function (result) {
+                for (var i = 0; i < result.length; i++) {
+                    var myLatLng = { lat: result[i].lat, lng: result[i].lon };
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: result[i].sNombre
+                    });
+                }
+                //var myLatLng = { lat: -17.3940468, lng: -66.2340887 };
+                //var myLatLng2 = { lat: -17.6779881, lng: -63.148727 };
+                //var marker = new google.maps.Marker({
+                //    position: myLatLng,
+                //    map: map,
+                //    title: 'Coca Cola 2783 ATF'
+                //});
+                //var marker = new google.maps.Marker({
+                //    position: myLatLng2,
+                //    map: map,
+                //    title: 'Nibol 2541 TUA'
+                //});
+            }).fail(function (par1, par2, par3) {
+                
+            });            
+        }
+
+        function InitControls() {
+            //var dsCiudades = new DevExpress.data.DataSource({
+            //    load: function (loadOptions) {
+            //        var d = $.Deferred();
+            //        $.ajax({
+            //            url: urlApi + "Api/Ciudades/GetByNombre?ciudad=" + loadOptions.searchValue
+            //            method: "GET",
+            //        }).done(function (result) {
+            //            d.resolve(result, {
+            //            });
+            //        });
+            //        return d.promise();
+            //    },
+            //});
+
+           
+
+
+            //---------------------------------Grid------------------------------------------
+
+            var dataStoreViajes = new DevExpress.data.CustomStore({
+                load: function (loadOptions) {
+                    var d = $.Deferred();
+                    $.ajax({
+                        url: urlApi + "Api/UsuarioViaje/GetAll",
+                        method: "GET",
+
+                    }).done(function (result) {
+                        d.resolve(result, {
+                        });
+                    }).fail(function (par1, par2, par3) {
+                        //General.HandleError(par3, par2);
+                    });
+                    return d.promise();
+                },
+                update: function (key, values) {
+                    $.ajax({
+                        method: "PUT",
+                        url: urlApi + 'Api/UsuarioViaje/Put?viajeId=' + key,
+                        data: JSON.stringify(values),
+                        contentType: 'application/json',
+                        dataType: "json",
+                    }).done(function mySuccess(response) {
+                        isEditingGrid = false;
+                        $('#grdViajes').dxDataGrid('instance').refresh();
+                        }).fail(function (par1, par2, par3) {
+                            isEditingGrid = false;
+                            //General.HandleError(par3, par2);
+                        });
+
+                },
+                insert: function (values) {
+                    $.ajax({
+                        method: "POST",
+                        url: urlApi + 'Api/UsuarioViaje/Post',
+                        data: JSON.stringify(values),
+                        contentType: 'application/json',
+                        dataType: "json",
+                    }).done(function mySuccess(response) {
+                        isEditingGrid = false;
+                        $('#grdViajes').dxDataGrid('instance').refresh();
+                        }).fail(function (par1, par2, par3) {
+                            isEditingGrid = false;
+                        //General.HandleError(par3, par2);
+                    });
+                },
+                key: "iUsuarioViaje_id",
+            });
+            var dsCiudades = new DevExpress.data.CustomStore({
+                load: function (loadOptions) {
+                    var sValue = loadOptions.searchValue;
+                    if (isEditingGrid == true && (sValue == null || sValue == '')) {
+                        sValue = "000";
+                    }
+                    var d = $.Deferred();
+                    $.ajax({
+                        //url: urlApi + "Api/Ciudades/GetAll",
+                        url: urlApi + "Api/Ciudades/GetByNombre?ciudad=" + sValue,
+                        method: "GET",
+
+                    }).done(function (result) {
+                        d.resolve(result, {
+                        });
+                    }).fail(function (par1, par2, par3) {
+                        //General.HandleError(par3, par2);
+                    });
+                    return d.promise();
+                },
+                byKey: function (key) {
+                    var d = $.Deferred();
+                    $.ajax({
+                        url: urlApi + '/Api/Ciudades/GetByKey?key=' + key,
+                        method: "GET",
+                    }).done(function (result) {
+                        d.resolve(result, {
+                        });
+                    });
+                    return d.promise();
+                },
+                key: "iCiudades_id",
+            });
+
+            var dsTelefonos = new DevExpress.data.CustomStore({
+                load: function (loadOptions) {
+                    var d = $.Deferred();
+                    $.ajax({
+                        url: urlApi + "Api/UsuarioTelefono/GetAll",
+                        method: "GET",
+
+                    }).done(function (result) {
+                        d.resolve(result, {
+                        });
+                    }).fail(function (par1, par2, par3) {
+                        //General.HandleError(par3, par2);
+                    });
+                    return d.promise();
+                },
+                byKey: function (key) {
+                    var d = $.Deferred();
+                    $.ajax({
+                        url: urlApi + '/Api/UsuarioTelefono/GetByKey?key=' + key,
+                        method: "GET",
+                    }).done(function (result) {
+                        d.resolve(result, {
+                        });
+                    });
+                    return d.promise();
+                },
+                key: "sTelefono_Id",
+            });
+            
+            var isEditingGrid = false;
+            $("#grdViajes").dxDataGrid({
+                keyExpr: "iUsuarioViaje_id",
+                showBorders: { visible: true },
+                showColumnLines: { visible: true },
+                showRowLines: { visible: true },
+                dataSource: dataStoreViajes,
+                paging: {
+                    pageSize: 40
+                },
+                pager: {
+                    showPageSizeSelector: false,
+                    allowedPageSizes: [10, 20, 40],
+                    showInfo: true
+                },
+                headerFilter: { visible: true },
+                filterRow: {
+                    showOperationChooser: false,
+                    visible: true,
+                },
+                editing: {
+                    mode: "form",
+                    allowUpdating: true,
+                    allowAdding: true,
+                },
+                groupPanel: {
+                    visible: false
+                },              
+                columns: [
+                    { dataField: "iUsuarioViaje_id", caption: "ID", visible: false, allowEditing: false },
+                    { dataField: "sNombre", caption: "Nombre", visible: true, allowEditing: true },
+                    {
+                        dataField: "iUsuarioTelefono_id", caption: "Telefono",
+                        allowEditing: true,
+                        lookup: {
+                            dataSource: dsTelefonos,
+                            valueExpr: "iUsuarioTelefono_id",
+                            displayExpr: "dtTelefono_Numero"
+                        }
+                    },
+                    {
+                        dataField: "dtFechaInicio", caption: "Inicio", width: "15%", dataType: 'date', format: 'dd/MM/yyyy' },
+                    {
+                        dataField: "dtFechaFin", caption: "Fin", width: "15%", dataType: 'date', format: 'dd/MM/yyyy'
+                    },
+                    {
+                        dataField: "iCiudades_idOrigen",
+                        caption: "Origen",
+                        allowEditing: true,
+                        lookup: {
+                            dataSource: dsCiudades,
+                            valueExpr: "iCiudades_id",
+                            displayExpr: "Ciudad"
+                        }
+                    },
+                    {
+                        dataField: "iCiudades_idDestino",
+                        caption: "Destino",
+                        allowEditing: true,
+                        lookup: {
+                            dataSource: dsCiudades,
+                            valueExpr: "iCiudades_id",
+                            displayExpr: "Ciudad"
+                        }
+                    },
+                ],
+                noDataText: "Sin Registros",
+                onSelectionChanged: function (selectedItems) {
+                },
+                onInitialized: function (e) {
+                },
+                onContentReady: function (e) {
+                },
+                onRowUpdating: function (options) {
+                    options.newData = $.extend({}, options.oldData, options.newData);
+                },
+                onEditingStart: function (e) {
+                    isEditingGrid = true;
+                },
+                onInitNewRow: function (e) {
+                    isEditingGrid = true;
+                },
+                masterDetail: {
+                    enabled: true,
+                    template: function (container, options) {
+                        var currentEmployeeData = options.data;
+
+                        $("<div>")
+                            .addClass("master-detail-caption")
+                            .text("Documentos")
+                            .appendTo(container);
+
+                        $("<div>")
+                            .dxDataGrid({
+                                columnAutoWidth: true,
+                                showBorders: true,
+                                columns: [{
+                                    dataField: "iUsuarioViajeDocumentos_id",
+                                    caption: "ID",
+                                    visible:false
+                                    }, {
+                                    dataField: "sNombre",
+                                    caption: "Nombre"
+                                    }, {
+                                        caption: "Ver", width: "20%",
+                                        cellTemplate: function (container, options) {
+                                            var imgUrl = urlApi + 'Api/UsuarioViajeDocumentos/Get/' + options.data.iUsuarioViajeDocumentos_id;
+                                            $("<a href='" + imgUrl + "' target='_blank'>Ver Documento</a>").appendTo(container);
+                                        }
+                                    }],
+                                dataSource: options.data.Documentos
+                            }).appendTo(container);
+                    }
+                }
+            });
+            //---------------------------------Grid------------------------------------------
+        }
+        InitControls();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn3j_kdKxbUhZW-VYOBrPjXL5JRu0oI48&callback=initMap"
+            async defer></script>
+</body>
+</html>

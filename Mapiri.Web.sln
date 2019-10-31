@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapiri.Web", "Mapiri.Web\Mapiri.Web.csproj", "{6DBFCF96-A493-46D1-9939-A9A4445D0032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapiri.Negocio.Modelo", "Mapiri.Negocio.Modelo\Mapiri.Negocio.Modelo.csproj", "{EF15C72D-2C16-451B-A25C-B50B56F0D610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapiri.Negocio.Api", "Mapiri.Negocio.Api\Mapiri.Negocio.Api.csproj", "{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapiri.Library", "Mapiri.Library\Mapiri.Library.csproj", "{CC991726-9947-419F-B952-58477F4341F0}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Mapiri.Reportes", "Mapiri.Reportes\Mapiri.Reportes.rptproj", "{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBFCF96-A493-46D1-9939-A9A4445D0032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF15C72D-2C16-451B-A25C-B50B56F0D610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C534CDB-F17B-44CA-86F3-68EB2A82F8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC991726-9947-419F-B952-58477F4341F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Debug|Any CPU.ActiveCfg = Debug
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Debug|Any CPU.Build.0 = Debug
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Debug|Any CPU.Deploy.0 = Debug
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Release|Any CPU.ActiveCfg = Release
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Release|Any CPU.Build.0 = Release
+		{2D2D7DE4-1A23-4DCA-8508-2FE79DB042E8}.Release|Any CPU.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

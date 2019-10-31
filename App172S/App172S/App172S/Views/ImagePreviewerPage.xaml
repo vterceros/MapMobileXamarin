@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             x:Class="App172S.Views.ImagePreviewerPage"
+             xmlns:local="clr-namespace:App172S.ViewModels"
+             Title="">
+    <ContentPage.BindingContext>
+        <local:ImagePreviewerViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout 
+        Margin="0, 0, 0, 0"
+        Padding="0, 0, 0, 0"
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="CenterAndExpand">
+
+        <ActivityIndicator 
+            Color="Orange" IsRunning="{Binding IsLoading}" 
+            IsVisible="{Binding IsLoading}">
+        </ActivityIndicator>
+        <Label 
+            Text="{Binding TextoCarga}"
+            IsVisible="{Binding EsVisibleTexto}">
+        </Label>
+        <!--Imagen-->
+        <Image 
+            Source="{Binding Imagen}"
+            Aspect="AspectFit"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            IsVisible="{Binding EsVisibleImagen}"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App172S.Views.Maps"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:mapsExt="clr-namespace:App172S.Extends">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout x:Name="stackMain" Padding="5,0,5,10">
+            <mapsExt:ExtMap x:Name="MapView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" mapsExt:Tapped="MapView_Tapped" />
+                    <Label x:Name="txtOrigenDestino" Text="Santa Cruz BO - Iquique CL" FontAttributes="Bold" ></Label>
+                <Label x:Name="txtFechaSalida" Text="Salida: 10/08/208" FontAttributes="Bold"></Label>
+                <Button x:Name="btnRefrescar" Text="" HorizontalOptions="FillAndExpand" HeightRequest="38"
+                             BackgroundColor="Orange"
+                             FontAttributes="Bold"
+                             TextColor="White"
+                        Clicked="btnRefrescar_Clicked"
+                            ></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
